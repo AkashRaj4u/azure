@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="services-azure-devops-mule-deployerFlow" doc:id="e14a3680-0f67-4e5a-bd02-5b43ed493f65" >
 		<http:listener doc:name="Listener" doc:id="fc6d1840-ea9c-4882-ae67-72e0892155d0" config-ref="HTTP_Listener_config" path="/demo"/>
-		<set-payload value="services-azure-devops-mule-deployer" doc:name="Set Payload" doc:id="27b356f1-624d-472e-abf1-8ca9dbb031ff" />
+		<set-payload value="This is an azure demo project" doc:name="Set Payload" doc:id="27b356f1-624d-472e-abf1-8ca9dbb031ff" />
 	</flow>
 </mule>
