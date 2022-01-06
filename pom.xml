@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>66cb3338-1482-4142-96ae-7aa2c25ec140</groupId>
-	<artifactId>azure-demo</artifactId>
+	<artifactId>azure</artifactId>
 	<version>1.0.0</version>
-	<packaging>mule-application</packaging>
-	<name>azure-demo</name>
+	<packaging>mule-api</packaging>
+	<name>azure</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
