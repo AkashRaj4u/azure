@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>66cb3338-1482-4142-96ae-7aa2c25ec140</groupId>
-	<artifactId>services-azure-devops-mule-deployer</artifactId>
+	<artifactId>azure-demo</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
-	<name>services-azure-devops-mule-deployer</name>
+	<name>azure-demo</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -20,14 +20,14 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
-    			<groupId>org.apache.maven.plugins</groupId>
-    			<artifactId>maven-install-plugin</artifactId>
-    			<version>2.5.2</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.5.2</version>
 			</plugin>
 			<plugin>
-    			<groupId>org.apache.maven.plugins</groupId>
-    			<artifactId>maven-deploy-plugin</artifactId>
-    			<version>2.8.2</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
@@ -35,25 +35,25 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <cloudHubDeployment>
-                        <uri>https://anypoint.mulesoft.com</uri>
-                        <muleVersion>${app.runtime}</muleVersion>
-                        <username>${anypoint.account.username}</username>
-                        <password>${anypoint.account.password}</password>
-                        <applicationName>${cloudhub.application.name}</applicationName>
-                        <environment>${environment}</environment>
-                        <businessGroupId>${business.group.id}</businessGroupId>
-                        <workers>1</workers>
-                        <workerType>MICRO</workerType>
-                        <artifact>${artifact}</artifact>
-                        <properties>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>${anypoint.account.username}</username>
+						<password>${anypoint.account.password}</password>
+						<applicationName>${cloudhub.application.name}</applicationName>
+						<environment>${environment}</environment>
+						<businessGroupId>${business.group.id}</businessGroupId>
+						<workers>1</workers>
+						<workerType>MICRO</workerType>
+						<artifact>${artifact}</artifact>
+						<properties>
 							<anypoint.platform.client_id>${anypoint.platform.client.id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>${anypoint.platform.client.secret}</anypoint.platform.client_secret>
 							<mule.env>${environment}</mule.env>
 							<mule.tools.version>1.8</mule.tools.version>
-                        </properties>
-                    </cloudHubDeployment>
-                </configuration>
+						</properties>
+					</cloudHubDeployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -97,9 +97,9 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-  		<pluginRepository>
-    		<id>mule-public</id>
-    		<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-  		</pluginRepository>
-</pluginRepositories>
+		<pluginRepository>
+			<id>mule-public</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
