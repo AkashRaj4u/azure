@@ -11,6 +11,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.5.2</mule.maven.plugin.version>
+		<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
+ 		<project.scm.id>444421309</project.scm.id>
 	</properties>
 	<build>
 		<plugins>
@@ -72,7 +74,6 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
-
 	<repositories>
 		<repository>
 			<id>anypoint-exchange-v2</id>
@@ -103,4 +104,12 @@
 			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
 		</pluginRepository>
 	</pluginRepositories>
+	<distributionManagement>
+ 		<repository>
+ 			<id>MuleExchangeRepository</id>
+ 			<name>MuleExchangeRepository</name>
+ 			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/ORGANIZATION_ID/maven</url>
+ 			<layout>default</layout>
+ 		</repository>
+	</distributionManagement>	
 </project>
